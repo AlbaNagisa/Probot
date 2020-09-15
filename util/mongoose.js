@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-
+const config = require('../config')
 module.exports = {
   init: () => {
     const mongOptions = {
@@ -14,7 +14,7 @@ module.exports = {
       family: 4
     }
 
-    mongoose.connect('mongodb+srv://Alban:Banban123@probote.844kw.mongodb.net/probote?retryWrites=true&w=majority', mongOptions);
+    mongoose.connect(config.mongodb, mongOptions);
     mongoose.Promise = global.Promise;
     mongoose.connection.on("connected", () => console.log("Mongoose est connecté!"));
   }
