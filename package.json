@@ -1,0 +1,25 @@
+{
+  "name": "probot",
+  "version": "0.0.1",
+  "description": "Bot discord Pronote",
+  "main": "config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alban9562/Probot.git"
+  },
+  "author": "Alban9562#9562",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alban9562/Probot/issues"
+  },
+  "homepage": "https://github.com/Alban9562/Probot#readme",
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "moment": "^2.28.0",
+    "mongoose": "^5.10.5",
+    "pronote-api": "^2.1.3"
+  }
+}
